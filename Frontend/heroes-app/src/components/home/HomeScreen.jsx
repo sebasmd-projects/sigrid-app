@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { NavLink } from 'react-router-dom'
+import { AuthContext } from '../auth/authContext'
+
 
 export const HomeScreen = () => {
+  const { user } = useContext(AuthContext)
+
   return (
     <>
       <h1>Hero App Content</h1>
+      <hr />
+
+      <h2>Ver Proyecto: </h2>
+
+      {
+        user.logged ? (
+          <p><NavLink to="/marvel">Marvel</NavLink> | <NavLink to="/dc">DC</NavLink> | <NavLink to="/search">Search</NavLink></p>
+        ) : <p><NavLink to="/login">Login</NavLink></p>
+      }
+
       <hr />
 
       <h2>Primera Parte</h2>
@@ -65,6 +80,8 @@ export const HomeScreen = () => {
           Reducer
         </li>
       </ul>
+
+
 
     </>
   )
