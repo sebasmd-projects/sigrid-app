@@ -1,0 +1,26 @@
+{
+    "FILE_NAME": "sensitive_data.json",
+    "ENVIRONMENT": "local",
+    "BASE_URL": "http://localhost:8000",
+    "SECRET_KEY": "v*gv(flw8r5)mc6s!y2zom7%%iq7=z=c9lb*c(&d59^d2*4^yb",
+    "ROOT_URLCONF": "sigrid.urls",
+    "WSGI_APPLICATION": "sigrid.wsgi.application",
+    "LANGUAGE_CODE": "es-co",
+    "TIME_ZONE": "America/Bogota",
+    "DB_CONN_MAX_AGE": 5,
+    "ALLOWED_HOSTS": {
+        "local": [
+            "localhost"
+        ],
+        "production": [
+            "sigridapp.com"
+        ],
+        "qa": [
+            "qa.sigridapp.com"
+        ]
+    },
+    "CORS_ALLOWED_ORIGINS":[
+        "http://localhost:3000",
+        "https://sebasmd.com"
+    ]
+}

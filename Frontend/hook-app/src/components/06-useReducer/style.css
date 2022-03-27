@@ -1,0 +1,16 @@
+body {
+    padding: 5rem;
+}
+
+button {
+    width: 100%;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+
+.hover {
+    cursor: pointer;
+}
